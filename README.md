@@ -1,3 +1,4 @@
 # AstroCalculator
 Astrophysics Calculator created to solve problems for Science Olympiad Astronomy Competition
-Look at the attached guides for more detailed information on how to use Astro Calculator
+
+Use attached guide documents to learn how to use AstroCalculator. Note that AstroCalculator 3.0.0 requires the numpy library.
