@@ -1320,7 +1320,7 @@ def CCb2(arr):
 
         
 #This part reads the file, converts values, and places them into the allObjs array
-print "Astronomy Calculator 3.0.0************Camas High School************Jason Kim\n"
+print ("Astronomy Calculator 3.0.0************Camas High School************Jason Kim\n")
 inFile=open("Astro3In.txt","r")
 fileList=inFile.read().split()
 numOfValues= int(len(fileList)/4)
@@ -1373,7 +1373,7 @@ for x in range(0, numOfValues):
 def inLoop(func):
     ph=func
     if not ph[1]=="":
-        print ph[1]
+        print (ph[1])
     return ph[0]
 
 def runLoop(arr):
@@ -1526,25 +1526,25 @@ for x in range(0, len(allObjs)):
         for y in range(0, len(allObjs[x])):
             for z in range(0, len(allObjs[x][y])):
                 if not "j" in str(allObjs[x][y][z]):
-                    print "\n"+allObjsNames[x][y][z]
+                    print ("\n"+allObjsNames[x][y][z])
                     for a in range(0, len(allObjs[x][y][z])):
                         if y==6:
-                            print str(allObjs[x][y][z][a])+" "+unitsArray[y][z]
+                            print (str(allObjs[x][y][z][a])+" "+unitsArray[y][z])
                         else:
-                            print str(allObjs[x][y][z][a])+" "+unitsArray[y][a]
+                            print (str(allObjs[x][y][z][a])+" "+unitsArray[y][a])
     else:
         for y in range(0, len(allObjs[x])):
             if not "j" in str(allObjs[x][y]):
-                print "\n"+allObjsNames[x][y]
+                print ("\n"+allObjsNames[x][y])
                 for a in range(0, len(allObjs[x][y])):
                     if y==0:
-                        print str(allObjs[x][y][a])+" "+unitsArray[3][a]
+                        print (str(allObjs[x][y][a])+" "+unitsArray[3][a])
                     if y==1:
-                        print str(allObjs[x][y][a])+" "+unitsArray[0][a]
+                        print (str(allObjs[x][y][a])+" "+unitsArray[0][a])
                     if y==2:
-                        print str(allObjs[x][y][a])+" "+unitsArray[2][a]
+                        print (str(allObjs[x][y][a])+" "+unitsArray[2][a])
                     if y==3:
-                        print str(allObjs[x][y][a])+" N"
+                        print (str(allObjs[x][y][a])+" N")
                     if y==4:
-                        print str(allObjs[x][y][a])+" J"
+                        print (str(allObjs[x][y][a])+" J")
 
